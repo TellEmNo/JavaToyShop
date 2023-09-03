@@ -1,14 +1,12 @@
 public class Toy {
     private int id;
     private String name;
-    private int count;
     private double weight;
 
-    public Toy(int id, String name, int count, double weight) {
+    public Toy(int id, String name, double weight) {
         this.id = id;
         this.name = name;
-        this.count = count;
-        this.weight = weight / 100.0;
+        this.weight = weight;
     }
 
 //    public void setId(int id) {
@@ -25,14 +23,6 @@ public class Toy {
 
     public String getName() {
         return name;
-    }
-
-//    public void setCount(int count) {
-//        this.count = count;
-//    }
-
-    public int getCount() {
-        return count;
     }
 
     public void setWeight(double weight) {
